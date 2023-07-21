@@ -1,0 +1,10 @@
+// styles/main.scss
+@import './variables';
+@import './mixins';
+@import './global';
+
+// Import component-specific styles
+@import '../pages/Home/Home';
+@import '../pages/Lodging/Lodging';
+@import '../pages/About/About';
+@import '../pages/Error/Error';
