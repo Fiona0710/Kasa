@@ -1,6 +1,20 @@
 @import '../../styles/mixins';
 
-.lodgingBlock{
+.hostAndTitle{
     @include flex-direction($direction:row-reverse, $justify-c:space-between);
     padding-top: 24px;
 }
+
+.TagAndRating{
+    @include flex-direction($justify-c:space-between);
+}
+
+.collapseLodging{
+    padding-top: 24px;
+    @include flex-direction($justify-c:space-between);
+    gap: 5%;
+    & ul >li{
+        list-style-type: none; 
+    }
+}
+
