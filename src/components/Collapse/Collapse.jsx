@@ -13,9 +13,9 @@ const Collapse = ({ title, children}) => {
   return (
     <div className='collapse'>
       {/* Render the collapse button with a conditional class 'rotate' if 'isOpen' is true */}
-      <div className={`collapse_button ${isOpen ? 'rotate' : ''}`}  onClick={toggleCollapse}>
+      <div className={`collapse_name ${isOpen ? 'rotate' : ''}`}  onClick={toggleCollapse}>
         {title} 
-        <img  src={ArrowUp} alt="logo de Kasa" />
+        <img  src={ArrowUp} alt={ArrowUp} />
       </div>
       {/* Render the content inside a div with class 'collapse_content' if 'isOpen' is true */}
       {isOpen && <div className="collapse_content">{children}</div>}

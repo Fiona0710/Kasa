@@ -5,8 +5,7 @@
 .collapse{
     width: 71%;
     overflow: hidden;
-    &_button{
-        
+    &_name{
         position: relative;
         z-index: 1;
         width: 100%;
@@ -29,11 +28,13 @@
     &_content{
         margin-top: -20px;
         padding: 35px 20px 15px 20px;
-        font-size: 17px;
+        font-size: 18px;
+        font-weight: 400;
         background-color: $primary;
         width: 100%;
         border-radius: 5px;
         color: $secondary;
-        animation: slideDown 0.5s ease-in-out both;   
+        animation: slideDown 0.5s ease-in-out both;
+          
     }     
 }
