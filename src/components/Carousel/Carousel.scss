@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .carousel {
     display: flex;
@@ -27,6 +28,19 @@
         bottom: 24.92px;
         color:$white;
         font-size: 18px;
+        
     }     
   }
+
+@include mobile{
+  .carousel {
+    height: 255px;
+    &_arrow-left,&_arrow-right{
+        width: 24px;    
+    } 
+    &_index{
+        visibility: hidden;    
+    }
+  }     
+}
   
