@@ -22,6 +22,7 @@
         & img{
             transition: transform 0.3s ease-in-out;
             transform: rotate(0deg);
+            cursor: pointer;
         
         }
         &.rotate img{
@@ -36,10 +37,21 @@
         background-color: $primary;
         border-radius: 5px;
         color: $secondary;
-        animation: slideDown 0.5s ease-in-out both;
+        &.open{
+            animation: slideDown 0.5s ease-in-out both;
+            margin-bottom: 30px
+           
+        }
+        &.close{
+            animation: slideUp 0.5s ease-in-out both;
+            
+        }
+        
           
     }     
 }
+
+  
 
 @include mobile{
     .collapse{
