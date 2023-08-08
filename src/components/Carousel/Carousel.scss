@@ -11,6 +11,9 @@
         @include img;
         border-radius: 25px;  
     }
+    &_arrow-left,&_arrow-right{
+        cursor: pointer;
+    }
     &_arrow-left,&_arrow-right,&_index{
         position: absolute;
     }   
